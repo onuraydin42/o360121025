@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Snow Landing Page Theme | Created By Visual Soldiers</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+    <link
+      href="{% static 'http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+
+    <script src="{% static 'js/modernizr-2.7.1.js' %}" >
+
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="home"
+            ><img src={% static "img/logo.svg" alt="Logo" %}
+          /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#pricing" class="scroll">Pricing</a></li>
+            <li><a href="signin/">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <a href="base/"><img src={% static 'img/logo.svg' alt="Logo" %}/></a>
+          </div>
+          <div class="col-xs-6 signin text-right navbar-nav">
+            <a href="#pricing" class="scroll">Pricing</a>&nbsp; &nbsp;<a
+              href="signin/"
+              >Sign in</a
+            >
+          </div>
+        </div>
+
+        <div class="row header-info">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h1 class="wow fadeIn">A free landing page theme</h1>
+            <br />
+            <p class="lead wow fadeIn" data-wow-delay="0.5s">
+              Lorem ipsum dolor sit amet, consectetur adipis. <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sit dol mi
+              arlna.
+            </p>
+            <br />
+
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="row">
+                  <div
+                    class="col-xs-6 text-right wow fadeInUp"
+                    data-wow-delay="1s"
+                  >
+                    <a
+                      href="#be-the-first"
+                      class="btn btn-secondary btn-lg scroll"
+                      >Learn More</a
+                    >
+                  </div>
+                  <div
+                    class="col-xs-6 text-left wow fadeInUp"
+                    data-wow-delay="1.4s"
+                  >
+                    <a href="#invite" class="btn btn-primary btn-lg scroll"
+                      >Request Invite</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    {% block content %} {% endblock %}
+    <footer>
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-8 margin-20">
+            <ul class="list-inline social">
+              <li>Connect with us on</li>
+              <li><a href="https://twitter.com/elonmusk" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/onurr.php/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          
+          <div class="col-sm-4 text-right">
+            <p><small>Copyright &copy; 2022. All rights reserved. <br>
+	            <a href="https://github.com/onuraydin42" target= "_blank">Created by Onur Aydın</a></small></p>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    <script src={% static "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" %}></script>
+    <script>window.jQuery || document.write('<script src={% static "js/jquery-1.11.0.min.js" %}><\/script>')</script>
+    <script src={% static "js/wow.min.js" %}></script>
+    <script src={% static "js/bootstrap.min.js" %}></script>
+    <script src={% static "js/main.js" %}></script>
+  </body>
+</html>
