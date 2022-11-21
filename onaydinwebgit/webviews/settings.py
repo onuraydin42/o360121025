@@ -67,7 +67,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 STATICFILES_DIRS = [
- BASE_DIR / 'webviews/static/',
+ BASE_DIR / 'projectapp/static/',
 ]
 
 LANGUAGE_CODE = 'en-us'
